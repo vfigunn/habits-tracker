@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Outfit:wght@600;800;950&family=JetBrains+Mono:wght@500;750&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-left: 2px solid #000000;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-left: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border: 2px solid #000000;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #cbd5e1;
+}
+
+/* Base custom styles */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8f9fa; /* Off-white from theme */
+  color: #1a1a1a; /* Very dark gray for absolute legibility */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Neo-brutalist adaptive utilities */
+.neo-card {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  color: #1a1a1a;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+}
+
+.dark .neo-card {
+  background-color: #1a1a1a;
+  border: 2px solid #ffffff;
+  box-shadow: 4px 4px 0px 0px rgba(255,255,255,1);
+  color: #ffffff;
+}
+
+.neo-btn {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+}
+
+.dark .neo-btn {
+  background-color: #1a1a1a;
+  border: 2px solid #ffffff;
+  box-shadow: 2px 2px 0px 0px rgba(255,255,255,1);
+  color: #ffffff;
+}
+
+.neo-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
+}
+
+.dark .neo-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px rgba(255,255,255,1);
+}
+
+.neo-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px rgba(0,0,0,1);
+}
+
+.dark .neo-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px 0px rgba(255,255,255,1);
+}
+
+.neo-input {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  color: #1a1a1a;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.dark .neo-input {
+  background-color: #1a1a1a;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.neo-border {
+  border-color: #000000;
+  transition: border-color 0.2s ease;
+}
+
+.dark .neo-border {
+  border-color: #ffffff;
+}
+
+.neo-border-2 {
+  border: 2px solid #000000;
+  transition: border-color 0.2s ease;
+}
+
+.dark .neo-border-2 {
+  border: 2px solid #ffffff;
+}
+
+.neo-divide > * + * {
+  border-color: #000000;
+}
+
+.dark .neo-divide > * + * {
+  border-color: #ffffff;
+}
