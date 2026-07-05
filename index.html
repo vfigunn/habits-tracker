@@ -3,10 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title & Description -->
+    <title>Habits Tracker — Mi Diario de Cruces</title>
+    <meta name="description" content="Aplicación para seguimiento diario de hábitos. Calendario mensual, tareas por plantilla, estadísticas con rachas y gráficos. 100% offline." />
+    <meta name="keywords" content="hábitos, tracker, calendario, productividad, diario, rutina, tareas, organización" />
+    <meta name="author" content="Habits Tracker" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://habits-tracker-mocha.vercel.app/" />
+
+    <!-- Theme Color (light / dark) -->
     <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)" />
-    <title>Habits Tracker</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Habits Tracker — Mi Diario de Cruces" />
+    <meta property="og:description" content="Seguimiento diario de hábitos con calendario, tareas, estadísticas y rachas. 100% offline." />
+    <meta property="og:url" content="https://habits-tracker-mocha.vercel.app/" />
+    <meta property="og:site_name" content="Habits Tracker" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://habits-tracker-mocha.vercel.app/icon-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Icono de Habits Tracker" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Habits Tracker — Mi Diario de Cruces" />
+    <meta name="twitter:description" content="Seguimiento diario de hábitos con calendario, tareas, estadísticas y rachas. 100% offline." />
+    <meta name="twitter:image" content="https://habits-tracker-mocha.vercel.app/icon-512.png" />
+
+    <!-- Favicon (SVG + PNG fallbacks) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="shortcut icon" href="/favicon-32.png" />
+
+    <!-- Apple Touch Icon (Home Screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Habits Tracker" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <!-- Android / PWA -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Microsoft Tiles (Windows) -->
+    <meta name="msapplication-TileColor" content="#0a1b2c" />
+    <meta name="msapplication-TileImage" content="/icon-192.png" />
+
+    <!-- Preconnect para mejorar performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Dark mode persistence -->
     <script>
       (function() {
         var stored = localStorage.getItem("darkMode");
